@@ -1,0 +1,3 @@
+my sql workbench
+
+edit->preference ->sql editor클릭->제일 밑 safe update체크 해제

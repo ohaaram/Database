@@ -88,3 +88,27 @@ insert into `TblProduct` set `prod_no`='1006',`prod_name`='휴대폰',`prod_pric
 
 
 #실습 2-9
+
+select * from `TblUser`;
+select `user_namne` from `TblUser`;
+select `user_name`,`user_hp` from `TblUser`;
+select *from `TblUser` where `user_id`='p102';
+select *from `TblUser` where `user_addr`='부산시 금정구';
+select *from `TblUser` where `user_age`>30;
+select *from `TblUser` where `user_hp` Is null;
+update `TblUser` set `user_age`=42 where `user_id`='p104';
+update `TblUser` set `user_addr`='부산시 진구' where `user_id`='p105';
+delete from `TblUser` where `user_id`='p103';
+
+select *from `TblProduct`;
+select `prod_name` from `TblProduct`;
+select `prod_name` `prod_company`,`prod_price` from `TblProduct`;
+select * from `TblProduct` where `prod_company`='LG전자';
+select *from `TblProduct` where `prod_company`='삼성전자';
+update `TblProduct` set `prod_company`='삼성전자',
+`prod_date`='2024-01-01' where `prod_no`=1006;
+
+
+
+
+
