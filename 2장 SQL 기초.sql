@@ -57,7 +57,7 @@ CREATE TABLE `TblUser` (
 `user_id` VARCHAR(10),
 `user_name` VARCHAR(10),
 `user_hp` CHAR(13),
-`user_age` INT,
+`user_age` INT,tblproduct
 `user_addr` VARCHAR(13)
 );
 insert into `TblUser` set `user_id`='p101',`user_name`='김유신',`user_hp`='010-1234-1001',`user_age`=25,`user_addr`='경남 김해시';
@@ -107,6 +107,17 @@ select * from `TblProduct` where `prod_company`='LG전자';
 select *from `TblProduct` where `prod_company`='삼성전자';
 update `TblProduct` set `prod_company`='삼성전자',
 `prod_date`='2024-01-01' where `prod_no`=1006;
+
+
+SELECT `PROD_NAME`from`tblproduct` where`PROD_STOCK`='102';
+
+SELECT *FROM `TBLPRODUCT`;
+
+DELETE FROM `tblproduct` WHERE `PROD_NAME`='휴대폰';
+
+update `TBLPRODUCT` SET `PROD_STOCK`='120' WHERE `PROD_NO`='1001'; 
+
+ALTER TABLE `TBLPRODUCT` modify `PROD_DATE` date;
 
 
 

@@ -1,0 +1,12 @@
+error: failed to push some refs to 'https://github.com/ohaaram/Database.git'
+이러한 에러가 떴을 때 해결방법
+(지금은 master 상태) 
+
+sql파일을 바탕화면으로 빼놓고
+
+clone으로 파일 생성 -> 클론파일 열어서 sql파일 빼놓은거 넣기
+database파일로 들어가서
+add와 커밋해주기
+명령어 입력해줄 때 git push 까지만 입력해주기
+(이거는 master가 아니기 때문에 origin master까지 입력할 필요가 없다.)
+
