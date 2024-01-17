@@ -1,7 +1,5 @@
 use university;
 
-set foreign_key_checks=1;
-
 insert into `students` values('20101001',10,'p10101','정우성','760121-1234567','010-1101-7601',null,'서울');
 insert into `students` values('20101002',10,'p10101','이정재','750611-1234567','010-1102-7506',null,'서울');
 insert into `students` values('20111011',11,'p11103','전지현','890530-1234567','010-1103-8905','jjh@naver.com','대전');
@@ -54,16 +52,16 @@ insert into `lectures` values('311003','p31104','기초 통계학',3,26,'별관3
 insert into `lectures` values('401019','p40101','기계역학',3,36,'공학관 102');
 insert into `lectures` values('421012','p42103','데이터베이스',3,32,'공학관 103');
 
-insert into `register` values('20101001','101001','p10101',null,null,null,null,null,null);
-insert into `register` values('20101001','101002','p10102',null,null,null,null,null,null);
-insert into `register` values('20111013','111011','p11103',null,null,null,null,null,null);
-insert into `register` values('21231002','231110','p23102',null,null,null,null,null,null);
-insert into `register` values('22401001','404019','p40101',null,null,null,null,null,null);
-insert into `register` values('22401001','421019','p42103',null,null,null,null,null,null);
-insert into `register` values('20101001','101003','p10102',null,null,null,null,null,null);
-insert into `register` values('22421003','311003','p31104',null,null,null,null,null,null);
-insert into `register` values('22421003','421012','p42103',null,null,null,null,null,null);
-insert into `register` values('20111013','111012','p11104',null,null,null,null,null,null);
+insert into `register` values('20101001','101001','p10101',null,null,null,null,null);
+insert into `register` values('20101001','101002','p10102',null,null,null,null,null);
+insert into `register` values('20111013','111011','p11103',null,null,null,null,null);
+insert into `register` values('21231002','231110','p23102',null,null,null,null,null);
+insert into `register` values('22401001','404019','p40101',null,null,null,null,null);
+insert into `register` values('22401001','421019','p42103',null,null,null,null,null);
+insert into `register` values('20101001','101003','p10102',null,null,null,null,null);
+insert into `register` values('22421003','311003','p31104',null,null,null,null,null);
+insert into `register` values('22421003','421012','p42103',null,null,null,null,null);
+insert into `register` values('20111013','111012','p11104',null,null,null,null,null);
 
 #1
 select a.`stdno`,a.`stdname`,a.`stdhp`,a.`depno`,b.`depname`
